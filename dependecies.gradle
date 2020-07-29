@@ -1,0 +1,200 @@
+ext {
+
+    configs = [
+            quickBuild          : false,
+            muduleLibDebug      : false
+
+    ]
+
+    versions = [
+            compileSdkVersion          : 29,
+            buildToolsVersion          : "29.0.3",
+            minSdkVersion              : 21,
+            targetSdkVersion           : 29,
+
+            kotlin_version             : '1.3.41',
+            gradle_version             : '4.0.1',
+            ktx                        : '1.1.0',
+            appcompat                  : '1.2.0-beta01',
+            databinding                : '3.5.0',
+
+            arch_room_version          : '2.1.0',
+            arch_comp_lifecycle        : '2.1.0',
+            arch_comp_paging           : '2.1.0',
+
+            rxjava                     : '2.2.4',
+            rxkotlin                   : '2.2.0',
+            rxandroid                  : '2.1.0',
+            rxbinding                  : '3.0.0-alpha2',
+            autodispose                : '1.1.0',
+
+            viewpager2                 : '1.0.0-beta04',
+            material_design            : '1.0.0-rc01',
+            recyclerview               : '1.0.0',
+            cardview                   : '1.0.0',
+            annotations                : '1.0.0',
+            constraint                 : '1.1.3',
+            retrofit                   : '2.6.1',
+            okhttp                     : '3.11.0',
+            glide                      : '4.10.0',
+            bugly                      : '3.2.3',
+            protobuf                   : '3.0.1',
+            protobuf_plugin_version    : '0.8.9',
+            timber                     : '4.7.1',
+            navigation                 : '2.1.0',
+            fragment                   : '1.2.4',
+            lifecycle                  : '2.2.0',
+            livedata                   : '2.2.0',
+
+            gms_service                : '4.3.3',
+            firebase_analytics         : '17.4.3',
+            firebase_firebase_messaging: '20.2.0',
+            firebase_perf              : '19.0.7',
+            firebase_appindexing       : '19.1.0',
+            google_billing_version     : '3.0.0',
+
+
+            banner                     : '2.6.1',
+
+            junit                      : '4.12',
+            android_junit              : '1.1.1',
+            test_runner                : '1.2.0',
+            espresso                   : '3.2.0',
+
+            lottie                     : '3.3.0',
+            swipeToLoadLayout          : '1.0.4',
+            multidex_version           : '2.0.1',
+            exoplayer                  : '2.11.3',
+            arialyy                     : '3.8.5',
+            aws_sdk                     : '2.16.9',
+            toasty                      : '1.4.2',
+            leakcanary                  : '2.2',
+            auth_microsoft              : '1.4.0',
+            auth_google                 : '18.0.0',
+            branch_io                   : '5.+',
+            getui                       : '2.13.2.0',
+            packer                      : '2.0.1',
+            photo_view                  : '2.1.3',
+            image_compressor            : '3.0.0',
+            easy_permissions            : '3.0.0',
+            google_ads                  : '17.0.0',
+            huawei_ads                  : '3.4.28.305',
+    ]
+
+    libs = [
+
+
+            arch_room                   : "androidx.room:room-runtime:${versions.arch_room_version}",
+            arch_room_compiler          : "androidx.room:room-compiler:${versions.arch_room_version}",
+            arch_comp_room_rxjava       : "androidx.room:room-rxjava2:${versions.arch_room_version}",
+            arch_comp_room_ktx          : "androidx.room:room-ktx:${versions.arch_room_version}",
+            arch_comp_room_test         : "androidx.room:room-testing:${versions.arch_room_version}",
+
+            arch_comp_extension         : "androidx.lifecycle:lifecycle-extensions:${versions.arch_comp_lifecycle}",
+            arch_comp_java8             : "androidx.lifecycle:lifecycle-common-java8:${versions.arch_comp_lifecycle}",
+            arch_comp_compiler          : "androidx.lifecycle:lifecycle-compiler:${versions.arch_comp_lifecycle}",
+            arch_comp_viewmodel         : "androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.arch_comp_lifecycle}",
+            arch_comp_livedata          : "androidx.lifecycle:lifecycle-livedata:${versions.arch_comp_lifecycle}",
+            arch_comp_livedata_rx       : "androidx.lifecycle:lifecycle-reactivestreams:${versions.arch_comp_lifecycle}",
+
+            arch_comp_paging            : "androidx.paging:paging-runtime:${versions.arch_comp_paging}",
+
+            rxjava                      : "io.reactivex.rxjava2:rxjava:${versions.rxjava}",
+            rxkotlin                    : "io.reactivex.rxjava2:rxkotlin:${versions.rxkotlin}",
+            rxandroid                   : "io.reactivex.rxjava2:rxandroid:${versions.rxandroid}",
+
+            rxbinding                   : "com.jakewharton.rxbinding3:rxbinding-core:${versions.rxbinding}",
+            rxbinding_appcompat         : "com.jakewharton.rxbinding3:rxbinding-appcompat:${versions.rxbinding}",
+            rxbinding_material          : "com.jakewharton.rxbinding3:rxbinding-material:${versions.rxbinding}",
+            rxbinding_viewpager         : "com.jakewharton.rxbinding3:rxbinding-viewpager:${versions.rxbinding}",
+            rxbinding_swiperefreshlayout: "com.jakewharton.rxbinding3:rxbinding-swiperefreshlayout:${versions.rxbinding}",
+            rxbinding_recyclerview      : "com.jakewharton.rxbinding3:rxbinding-recyclerview:${versions.rxbinding}",
+
+            autodispose                 : "com.uber.autodispose:autodispose-android:${versions.autodispose}",
+            autodispose_ktx             : "com.uber.autodispose:autodispose-ktx:${versions.autodispose}",
+            autodispose_android_ktx     : "com.uber.autodispose:autodispose-android-ktx:${versions.autodispose}",
+            autodispose_archs_ktx       : "com.uber.autodispose:autodispose-android-archcomponents-ktx:${versions.autodispose}",
+
+            viewpager2                  : "androidx.viewpager2:viewpager2:${versions.viewpager2}",
+            material_design             : "com.google.android.material:material:${versions.material_design}",
+            recyclerview                : "androidx.recyclerview:recyclerview:${versions.recyclerview}",
+            cardview                    : "androidx.cardview:cardview:${versions.cardview}",
+            annotations                 : "androidx.annotation:annotation:${versions.annotations}",
+            constraint                  : "androidx.constraintlayout:constraintlayout:${versions.constraint}",
+            fragment                    : "androidx.fragment:fragment-ktx:${versions.fragment}",
+            lifecycle                   : "androidx.lifecycle:lifecycle-runtime-ktx:${versions.lifecycle}",
+            livedata                    : "androidx.lifecycle:lifecycle-livedata-ktx:${versions.livedata}",
+
+            retrofit                    : "com.squareup.retrofit2:retrofit:${versions.retrofit}",
+            retrofit_gson               : "com.squareup.retrofit2:converter-gson:${versions.retrofit}",
+            retrofit_rxjava             : "com.squareup.retrofit2:adapter-rxjava2:${versions.retrofit}",
+
+            okhttp                      : "com.squareup.okhttp3:okhttp:${versions.okhttp}",
+            okhttp_logging              : "com.squareup.okhttp3:logging-interceptor:${versions.okhttp}",
+
+            glide                       : "com.github.bumptech.glide:glide:${versions.glide}",
+            glide_compiler              : "com.github.bumptech.glide:compiler:${versions.glide}",
+
+            easy_permissions            : "pub.devrel:easypermissions:${versions.easy_permissions}",
+
+            bugly                       : "com.tencent.bugly:crashreport:${versions.bugly}",
+
+            protobuf                    : "com.google.protobuf:protobuf-lite:${versions.protobuf}",
+            protobuf_plugin             : "com.google.protobuf:protobuf-gradle-plugin:${versions.protobuf_plugin_version}",
+
+            timber                      : "com.jakewharton.timber:timber:${versions.timber}",
+
+            navigation                  : "androidx.navigation:navigation-fragment-ktx:${versions.navigation}",
+            navigation_ui               : "androidx.navigation:navigation-ui-ktx:${versions.navigation}",
+            firebase_analytics          : "com.google.firebase:firebase-analytics-ktx:${versions.firebase_analytics}",
+            firebase_perf               : "com.google.firebase:firebase-perf:${versions.firebase_perf}",
+            firebase_firebase_messaging : "com.google.firebase:firebase-messaging:${versions.firebase_firebase_messaging}",
+            google_billing_ktx          : "com.android.billingclient:billing-ktx:${versions.google_billing_version}",
+            wechat_billing              : "com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+",
+
+            banner_view_pager           : "com.github.zhpanvip:BannerViewPager:${versions.banner}",
+            ktx                         : "androidx.core:core-ktx:${versions.ktx}",
+            appcompat                   : "androidx.appcompat:appcompat:${versions.appcompat}",
+
+            junit                       : "junit:junit:${versions.junit}",
+            android_junit               : "androidx.test.ext:junit:${versions.android_junit}",
+            test_runner                 : "androidx.test:runner:${versions.test_runner}",
+            espresso                    : "androidx.test.espresso:espresso-core:${versions.espresso}",
+            databinding                 : "com.android.databinding:compiler:${versions.databinding}",
+            lottie                      : "com.airbnb.android:lottie:${versions.lottie}",
+            indicatorseekbar            : "com.github.warkiz.widget:indicatorseekbar:2.1.2",
+            utilcode                    : "com.blankj:utilcode:1.23.2",
+            google_services             : "com.google.gms:google-services:${versions.gms_service}",
+            swipeToLoadLayout           : "com.github.Aspsine:SwipeToLoadLayout:${versions.swipeToLoadLayout}",
+
+            multidex                    : "androidx.multidex:multidex:${versions.multidex_version}",
+            exoplayer                   : "com.google.android.exoplayer:exoplayer:${versions.exoplayer}",
+
+            arialyy_core                : "com.arialyy.aria:core:${versions.arialyy}",
+            arialyy_compiler            : "com.arialyy.aria:compiler:${versions.arialyy}",
+
+            aws_sdk_core                : "com.amazonaws:aws-android-sdk-core:${versions.aws_sdk}",
+            aws_sdk_s3                  : "com.amazonaws:aws-android-sdk-s3:${versions.aws_sdk}",
+            aws_sdk_kinesis             : "com.amazonaws:aws-android-sdk-kinesis:${versions.aws_sdk}",
+
+            toasty                      : "com.github.GrenderG:Toasty:${versions.toasty}",
+
+            leakcanary                  : "com.squareup.leakcanary:leakcanary-android:${versions.leakcanary}",
+
+            auth_microsoft              : "com.microsoft.identity.client:msal:${versions.auth_microsoft}",
+            auth_google                 : "com.google.android.gms:play-services-auth:${versions.auth_google}",
+
+            getui                       : "com.getui:sdk:${versions.getui}",
+            app_packer                  : "com.mcxiaoke.packer-ng:plugin:${versions.packer}",
+            app_packer_helper           : "com.mcxiaoke.packer-ng:helper:${versions.packer}",
+
+            photo_view                  : "com.github.chrisbanes:PhotoView:${versions.photo_view}",
+            image_compressor            : "id.zelory:compressor:${versions.image_compressor}",
+
+            branch_io                   : "io.branch.sdk.android:library:${versions.branch_io}",
+
+            firebase_appindexing        : "com.google.firebase:firebase-appindexing:${versions.firebase_appindexing}",
+            google_ads                  : "com.google.android.gms:play-services-ads-identifier:${versions.google_ads}",
+            huawei_ads                  : "com.huawei.hms:ads-identifier:${versions.huawei_ads}"
+    ]
+}

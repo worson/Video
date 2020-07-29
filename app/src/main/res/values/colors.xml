@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#1C1C1D</color>
+  <color name="colorPrimaryDark">#1C1C1D</color>
+  <color name="colorAccent">#03DAC5</color>
+
+  <color name="text_title">#FFFFFF</color>
+  <color name="text_sub_title">#99EBEBF5</color>
+  <color name="text_body">#4DEBEBF5</color>
+  <color name="text_button">#24F0B6</color>
+  <color name="text_warning">#FF453A</color>
+  <color name="text_title_black_bg">#0A84FF</color>
+  <color name="text_share_item">#484949</color>
+  <color name="text_title_while_bg">#121212</color>
+  <color name="text_body_while_bg">#6c6c70</color>
+
+  <color name="bg_dark">#1C1C1D</color>
+  <color name="bg_light">#FFFFFF</color>
+
+  <color name="list_divider">#14FFFFFF</color>
+
+  <color name="toast_normal_text">#FFFFFFFF</color>
+  <color name="toast_normal_bg">#FF3D3D3D</color>
+</resources>
