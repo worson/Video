@@ -7,7 +7,7 @@
 
   <fragment
     android:id="@+id/navigation_home"
-    android:name="app.sen.video.ui.mediaplay.MediaplayFragment"
+    android:name="app.sen.video.ui.mediaplay.MediaplayTextureFragment"
     android:label="@string/title_home"
     tools:layout="@layout/fragment_home" />
 
